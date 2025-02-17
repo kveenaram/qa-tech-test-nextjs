@@ -83,4 +83,8 @@ export class ImageGalleryPage {
             await this.page.waitForTimeout(100);
         }
     }
+
+    async clearSearch() {
+        await this.searchInput.clear();
+    }
 }
