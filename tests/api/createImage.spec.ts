@@ -19,7 +19,6 @@ test.describe('POST /api/images Tests', () => {
 
     const response = await imagesClient.createImage(payload);
     const responseBody = await response.json();
-    console.log(responseBody); 
     expect(response.status()).toBe(201);
 
     // Verify the response body
@@ -36,8 +35,8 @@ test.describe('POST /api/images Tests', () => {
     const payload = {
       tags: 'nature, beach, sunset',
       keywords: ['nature', 'beach', 'sunset'],
-      image: 'https://example.com/image.jpg', // Add this if required
-      uploadDate: new Date().toISOString() // Add this if required
+      image: 'https://example.com/image.jpg', 
+      uploadDate: new Date().toISOString() 
     };
 
     const response = await imagesClient.createImage(payload);
