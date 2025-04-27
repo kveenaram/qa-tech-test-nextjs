@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start -p 3000",
     "lint": "next lint",
-    "playwright": "playwright test --ui"
+    "playwright": "playwright test --ui",
+    "test:api": "BASE_URL=http://localhost:3000 playwright test tests/api"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
